@@ -34,7 +34,7 @@ class boxProblem(unittest.TestCase):
         # arrange
         expected = 0
         # act
-        actual = bigBoxes(4) 
+        actual = bigBoxes(4)
         # assert
         self.assertEqual(actual, expected)
         # arrange
@@ -43,6 +43,7 @@ class boxProblem(unittest.TestCase):
         actual = bigBoxes(5)
         # assert
         self.assertEqual(actual, expected)
+
     def test_mediumBoxes(self):
         # remember that medium boxes hold 3 items
         # so the input 4 should return 1 medium boxes, but 2 should return 0
@@ -53,7 +54,7 @@ class boxProblem(unittest.TestCase):
         # arrange
         expected = 1
         # act
-        actual = mediumBoxes(4) 
+        actual = mediumBoxes(4)
         # assert
         self.assertEqual(actual, expected)
         # arrange
@@ -62,8 +63,9 @@ class boxProblem(unittest.TestCase):
         actual = mediumBoxes(2)
         # assert
         self.assertEqual(actual, expected)
+
     def test_smallBoxes(self):
-        # remember that small boxes hold 1 item each so should be used only 
+        # remember that small boxes hold 1 item each so should be used only
         # in the case that the number of items is not divisible by 5 nor 3
         # so the input 4 should return 1 small boxes, but 5 should return 0
         # we can use the assertEqual method to test the result of the function is equal to this expectation.
@@ -73,7 +75,7 @@ class boxProblem(unittest.TestCase):
         # arrange
         expected = 1
         # act
-        actual = smallBoxes(4) 
+        actual = smallBoxes(4)
         # assert
         self.assertEqual(actual, expected)
         # arrange
@@ -84,24 +86,8 @@ class boxProblem(unittest.TestCase):
         self.assertEqual(actual, expected)
 
 
-
 if __name__ == "__main__":
     # run the tests
     unittest.main()
     # if we run this file directly, we will run the tests
-
-
-
-
-
-
-
-
-    
-
-
-    
-    
-
-    
-
+    # if we import this file as a module it will not run the tests
